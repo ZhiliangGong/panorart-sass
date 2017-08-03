@@ -1,0 +1,13 @@
+// main: panorart.scss
+
+@mixin break($width...) {
+  @if length($width) == 1 {
+    @media (min-width: nth($width, 1)){
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($width, 1)) and (max-width: nth($width, 2)) {
+      @content;
+    }
+  }
+}

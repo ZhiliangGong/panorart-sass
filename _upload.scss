@@ -1,0 +1,47 @@
+// main: panorart.scss
+
+.image-upload-well {
+  position: relative;
+  border: 4px dashed #ddd;
+  border-radius: 10px;
+  color: #ddd;
+  min-height: 300px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 2%;
+  }
+  div {
+    font: bold 24px/300px arial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover {
+    border-color: lighten($brand-primary, 10%);
+  }
+  &.active {
+    border-color: lighten($brand-primary, 10%);
+  }
+  &.success {
+    border: 0px;
+    div {
+      z-index: -1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// main: panorart.scss
+
+.th-20 {
+  width: 20%;
+}
+
+.th-30 {
+  width: 30%;
+}
+
+.sortable-th {
+  cursor: pointer;
+}
+
+.sortable {
+  tbody {
+    tr {
+      td {
+        vertical-align: middle;
+      }
+    }
+  }
+  button {
+    margin-bottom: 0.1em;
+  }
+  img {
+    width: 95%;
+    border-radius: 5%;
+  }
+}

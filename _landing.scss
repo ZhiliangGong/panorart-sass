@@ -1,0 +1,34 @@
+// main: panorart.scss
+
+.bgimg {
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('http://panorart-static.oss-us-west-1.aliyuncs.com/img/city.jpg');
+  min-height: calc(100vh - 50px);
+  position: relative;
+  margin: 0 -15px;
+}
+
+.landing-container {
+  h1 {
+    color: #eee;
+    position: absolute;
+    top: 30%;
+    animation: opac 1.5s;
+    padding: 10px 10px;
+    background: #333;
+  }
+}
+
+@-webkit-keyframes opac {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes opac {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
