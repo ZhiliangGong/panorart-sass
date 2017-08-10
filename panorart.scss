@@ -1,4 +1,4 @@
-// compileCompressed, sourceMap: false, compressedFilenamePattern: ../admin/src/assets/css/$1.min.css
+// compileCompressed, sourceMap: false, compressedFilenamePattern: ../customer/src/assets/css/$1.min.css,
 
 @import 'variables';
 @import 'mixin';
@@ -10,6 +10,7 @@
 @import 'modal';
 @import 'upload';
 @import 'table';
+@import 'card';
 
 @import 'navbar';
 @import 'footer';

@@ -29,11 +29,31 @@
   }
   .image-upload-well {
     border-color: $pano-danger;
+    &:hover {
+      border-color: lighten($brand-primary, 10%);
+    }
   }
 }
 
 textarea, input, select {
   &.ng-invalid {
     border-left: 5px solid #a94442;
+  }
+}
+
+.textarea-with-limit {
+  .limit {
+    position: relative;
+    float: right;
+    bottom: 1.5em;
+    right: 1em;
+    color: #555;
+  }
+}
+
+.input-group {
+  select {
+    border-radius: 0;
+    -webkit-appearance: none;
   }
 }
